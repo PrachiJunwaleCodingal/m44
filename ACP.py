@@ -1,0 +1,11 @@
+def sort_array(arr):
+    count_0 = arr.count(0)
+    count_1 = arr.count(1)
+    count_2 = arr.count(2)
+    
+    arr[:] = [0] * count_0 + [1] * count_1 + [2] * count_2
+    return arr
+
+numbers = [2, 0, 2, 1, 1, 0]
+print("Sorted:", sort_array(numbers))
+
